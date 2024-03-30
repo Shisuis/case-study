@@ -38,3 +38,22 @@ plt.scatter(X_test["column1"], y_pred, color="red", label="Predicted")
 plt.legend()
 plt.show()
 
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def accelerate(self):
+        print(f"The {self.make} {self.model} is accelerating!")
+
+# Create a Car object
+my_car = Car("Tesla", "Model S", 2024)
+
+# Access object attributes and call methods
+print(f"Make: {my_car.make}")
+print(f"Model: {my_car.model}")
+print(f"Year: {my_car.year}")
+
+my_car.accelerate()
+
